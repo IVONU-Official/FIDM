@@ -1,0 +1,36 @@
+name: Bug report
+description: Report a reproducible problem in FIDM.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Describe the behavior and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: List the steps, URL type, and settings needed to reproduce the problem. Do not include private download URLs or credentials.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: FIDM version or commit
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: Operating system and desktop environment
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs
+      render: text
